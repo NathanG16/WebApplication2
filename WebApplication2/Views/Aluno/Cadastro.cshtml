@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = "_LayoutCadatro";
+}
+@model Aluno
+
+<form asp-controller="Login" asp-action="CadastrarAluno" method="post">
+
+    <div class="mb-3 col-md-4">
+        <label class="form-label">Matricula</label>
+        <input type="text" asp-for="Matricula" class="form-control">
+    </div>
+
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Nome</label>
+        <input type="password" asp-for="Nome" class="form-control ">
+    </div>
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Cpf</label>
+        <input type="password" asp-for="Cpf" class="form-control ">
+    </div>
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Data de nascimento</label>
+        <input type="password" asp-for="Data_De_Nascimento" class="form-control ">
+    </div>
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Cep</label>
+        <input type="password" asp-for="Cep" class="form-control ">
+    </div>
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Endereço</label>
+        <input type="password" asp-for="Endereco" class="form-control ">
+    </div>
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Bairro</label>
+        <input type="password" asp-for="Bairro" class="form-control ">
+    </div>
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Cidade</label>
+        <input type="password" asp-for="Cidade" class="form-control ">
+    </div>
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Numero</label>
+        <input type="password" asp-for="Numero" class="form-control ">
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <a class="btn btn-primary" type="button" asp-controller="Login" asp-action="Index"> Voltar</a>
+    </div>
+</form>
