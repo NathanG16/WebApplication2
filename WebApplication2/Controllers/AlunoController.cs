@@ -8,5 +8,9 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
+        public IActionResult CadastrarAluno()
+        {
+            return View();
+        }
     }
 }
