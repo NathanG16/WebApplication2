@@ -17,5 +17,7 @@ namespace WebApplication2.Data
         }
 
         public DbSet<Usuario> Usuario { get; set; }
+
+        public DbSet<Aluno> Aluno { get; set; }
     }
 }
